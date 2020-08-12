@@ -5,7 +5,7 @@
 <!-- Page content -->
 <div class="page-content" style="height: 100vh;">
   <!-- Main sidebar -->
-  <app-sidebar></app-sidebar>
+  <app-sidebar (selectedLink)="onNavigate($event)"></app-sidebar>
   <!-- /main sidebar -->
 
   <!-- Main content -->
@@ -15,7 +15,12 @@
     <!-- /page header -->
 
     <!-- Content area -->
-    <div class="content"></div>
+    <div class="content">
+
+      <app-dashboard *ngIf="selectedLinkInSidebar==='dashboard'"></app-dashboard>
+      <app-product *ngIf="selectedLinkInSidebar==='productlist'"></app-product>
+
+    </div>
     <!-- /content area -->
 
     <!-- Footer -->

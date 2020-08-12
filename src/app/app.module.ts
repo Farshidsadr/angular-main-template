@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductComponent } from './product/product.component';
+import { ProductItemComponent } from './product/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     SidebarComponent,
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent,
+    ProductComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
