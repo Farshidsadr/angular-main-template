@@ -41,6 +41,9 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- <app-product-item *ngFor="let product of ProductList; let i = index;" [productItem]="product"
+                    [productIndex]="i">
+                </app-product-item> -->
                 <tr app-product-item role="row" [ngClass]="i % 2 == 0 ? 'odd': 'even'"
                     *ngFor="let product of ProductList; index as i;" [productItem]="product" [productIndex]="i">
                 </tr>
